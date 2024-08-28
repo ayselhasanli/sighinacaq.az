@@ -1,0 +1,16 @@
+:root{
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-orange:  #e48e33;
+  --color-blue: #047CD1;
+  --color-extra-light-gray: #fafafa;
+  --color-light-gray: #f0f0f0;
+}
+
+
+.container {
+  width: 95%;
+  height: 100%; 
+  max-width: 114rem;
+  margin-inline: auto;
+}
