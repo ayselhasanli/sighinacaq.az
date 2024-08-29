@@ -2,73 +2,68 @@ import React, { useState } from "react";
 import "./Header.css";
 import logo from "./../../assets/media/logo.png";
 import searchIcon from "./../../assets/media/navbar-search.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [mobMenu, setMobMenu] = useState(true);
+  // const [active, setActive] = useState(false)
 
   const toggleMenu = () => {
     mobMenu ? setMobMenu(false) : setMobMenu(true);
-
-    console.log(mobMenu);
   };
 
   return (
-    <header>
+    <header className="sticky">
       <nav className="container">
         <div className="logo">
-          <img src={logo} alt="header-logo" />
+          <NavLink smooth={true} to="/">
+            <img src={logo} alt="header-logo" />
+          </NavLink>
         </div>
 
         <ul className={`nav-menu ${mobMenu ? "" : "show-mob-menu"}`}>
           <li>
-            <Link smooth={true} offset={0} to="services">
+            <NavLink
+              smooth={true}
+              offset={0}
+              to="#services"
+            >
               Our Services
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link smooth={true} offset={0} to="training">
+            <NavLink smooth={true} offset={0} to="#training">
               Training
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link smooth={true} offset={0} to="projects">
+            <NavLink smooth={true} offset={0} to="#projects">
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link smooth={true} offset={0} to="contact">
+            <NavLink smooth={true} offset={0} to="#contact">
               Contact Us
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link smooth={true} offset={0} to="services">
+            <NavLink smooth={true} offset={0} to="#services">
               About Us
-            </Link>
+            </NavLink>
           </li>
-          <li>
-            <ul className="header-socials">
-              <li>
-                <button>
-                  <i className="fa-brands fa-facebook-f"></i>
-                </button>
-              </li>
-              <li>
-                <button>
-                  <i className="fa-brands fa-twitter"></i>
-                </button>
-              </li>
-              <li>
-                <button>
-                  <i className="fa-brands fa-instagram"></i>
-                </button>
-              </li>
-              <li>
-                <button>
-                  <i className="fa-brands fa-youtube"></i>
-                </button>
-              </li>
-            </ul>
+          <li className="header-socials">
+            <button>
+              <i className="fa-brands fa-facebook-f"></i>
+            </button>
+            <button>
+              <i className="fa-brands fa-twitter"></i>
+            </button>
+            <button>
+              <i className="fa-brands fa-instagram"></i>
+            </button>
+            <button>
+              <i className="fa-brands fa-youtube"></i>
+            </button>
           </li>
           <li>
             <button className="btn">

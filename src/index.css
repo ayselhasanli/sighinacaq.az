@@ -7,6 +7,12 @@
   --color-light-gray: #f0f0f0;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
 
 .container {
   width: 95%;

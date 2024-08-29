@@ -15,6 +15,28 @@ header .container .nav-menu {
   gap: 4rem;
 }
 
+header .container .nav-menu li {
+  position: relative;
+}
+
+header .container .nav-menu li a:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 30%;
+  width: 40%;
+  background-color: var(--color-orange);
+  height: 2px;
+  display: none;
+}
+ 
+header .container .nav-menu li a:hover:after,
+header .container .nav-menu li a:focus:after,
+header .container .nav-menu li a:active:after {
+  display: block;
+}
+ 
+
 header .container .nav-menu .btn {
   display: none;
 }
@@ -45,9 +67,9 @@ header .container .mob-menu-btn {
 header .container .mob-menu-icon__white {
   color: var(--color-white);
 }
-  header .container .nav-menu li:has(> .header-socials) {
-    margin: 0 0;
-  }
+header .container .nav-menu li:has(> .header-socials) {
+  margin: 0 0;
+}
 /*media queries*/
 
 @media screen and (max-width: 992px) {
@@ -83,6 +105,7 @@ header .container .mob-menu-icon__white {
   header .container .mob-menu-btn {
     display: block;
     font-size: 2rem;
+    z-index: 99;
   }
 
   header .container .nav-menu {
@@ -92,7 +115,7 @@ header .container .mob-menu-icon__white {
     right: -23rem;
     bottom: 0;
     background-color: var(--color-black);
-    z-index: -1;
+    z-index: 9;
     width: 23rem;
     padding-top: 4rem;
     transition: 0.5s;
@@ -135,6 +158,7 @@ header .container .mob-menu-icon__white {
 
   header .container .nav-menu .header-socials {
     display: flex;
+    gap: 2rem;
   }
 
   header .container .nav-menu .header-socials button {
@@ -147,7 +171,8 @@ header .container .mob-menu-icon__white {
     transition: 0.5s ease;
   }
 
-  header .container .nav-menu li:has(> .header-socials) {
-    margin: 0 0;
+  header .container .nav-menu .header-socials button:hover {
+    transform: scale(1.1);
+    background-color: var(--color-orange);
   }
 }
