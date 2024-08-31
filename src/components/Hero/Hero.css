@@ -38,3 +38,12 @@
 .hero .container button:hover {
   transform: scale(1.2);
 }
+
+/*media queries*/
+@media screen and (max-width: 726px){
+  .hero .container h1 {
+  max-width: 54rem;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+}

@@ -1,12 +1,13 @@
 import React from 'react'
-import MainLayout from '../../layouts/MainLayout'
 import "./HomePage.css"
 import Hero from '../../components/Hero/Hero'
+import About from '../../components/About/About'
 
 const HomePage = () => {
   return (
      <>
      <Hero/>
+     <About/>
      </>
   )
 }
