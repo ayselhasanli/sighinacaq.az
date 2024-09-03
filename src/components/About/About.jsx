@@ -36,9 +36,11 @@ const About = () => {
             </div>
           </div>
 
-          <button className="about-button">
-            See More <i className="fa-solid fa-chevron-right"></i>
-          </button>
+          <div className="about-button">
+            <button>
+              See More <i className="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>

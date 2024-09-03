@@ -5,6 +5,7 @@
   --color-blue: #047CD1;
   --color-extra-light-gray: #fafafa;
   --color-light-gray: #f0f0f0;
+  --overlay: rgba(0,0,0,0.2)
 }
 
 .sticky {
@@ -18,5 +19,12 @@
   width: 95%;
   height: 100%; 
   max-width: 114rem;
+  margin-inline: auto;
+}
+
+.section-heading {
+  width: 95%;
+  height: 100%; 
+  max-width: 142rem;
   margin-inline: auto;
 }

@@ -1,0 +1,65 @@
+.project-card {
+  flex-basis: 31%;
+  position: relative;
+}
+
+ .project-card img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  display: block;
+  max-height: 44rem;
+  height: 44rem;
+}
+
+ .project-card:hover .img-overlay {
+  opacity: 1;
+  visibility: visible;
+  padding-top: 0;
+}
+
+.project-card .img-overlay {
+  opacity: 0;
+  padding-top: 70%;
+  visibility: hidden;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--overlay);
+  color: var(--color-white);
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card .img-overlay p {
+  padding-left: 2.7rem;
+  max-width: 24rem;
+  font-size: 2.4rem;
+}
+
+.project-card .img-overlay button {
+  width: 100%;
+  background-color: var(--color-blue);
+  padding: 1.4rem 2.7rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.6rem;
+}
+
+.project-card .img-overlay button i {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 908px) {
+  .project-cards .project-card {
+    flex-basis: 100%;
+    margin: 2rem;
+  }
+}

@@ -3,7 +3,7 @@
   min-height: 100dvh;
   display: flex;
   align-items: center;
-  padding: 12rem 0;
+  padding-top: 12rem;
 }
 
 .about .container {
@@ -69,4 +69,42 @@
   line-height: 2rem;
   font-weight: 700;
   transition: 0.5s ease;
+}
+
+/*media queries*/
+@media screen and (max-width: 863px) {
+  .about .container .about-content h2 {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+  .about .container .about-content p {
+    margin-top: 2rem;
+  }
+
+  .about .container .about-content .about-services {
+    margin: 2rem 0;
+  }
+  .about .container {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .about {
+    padding: 5rem 0;
+  }
+  .about .container {
+    flex-direction: column;
+  }
+  .about .container .about-content p {
+    max-width: 100%;
+    width: 100%;
+  }
+  .about .container .about-img {
+    display: none;
+  }
+  .about .container .about-content .about-button {
+    display: flex;
+    justify-content: center;
+  }
 }

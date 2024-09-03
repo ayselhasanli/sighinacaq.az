@@ -1,0 +1,20 @@
+.project-cards {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.projects h2 {
+  font-size: 6.3rem;
+  font-weight: 500;
+  padding-bottom: 3.5rem;
+  padding-top: 6rem;
+}
+
+
+/*Media queries*/ 
+
+@media screen and (max-width: 908px) {
+  .project-cards {
+    flex-direction: column;
+  }
+}

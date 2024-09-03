@@ -47,7 +47,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink smooth={true} offset={0} to="#services">
+            <NavLink smooth={true} offset={0} to="#about">
               About Us
             </NavLink>
           </li>
