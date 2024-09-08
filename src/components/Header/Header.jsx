@@ -32,8 +32,8 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink smooth={true} offset={0} to="#training">
-              Training
+            <NavLink smooth={true} offset={0} to="#blogs">
+              Blogs
             </NavLink>
           </li>
           <li>
