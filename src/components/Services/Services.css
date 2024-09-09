@@ -1,22 +1,20 @@
-.services{
+.services {
   margin-bottom: 13.2rem;
 }
 
 .service-cards {
   display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(270px, 1fr) );
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 2.5rem;
 }
 
 .services h2 {
-  font-size: 6.3rem;
   font-weight: 500;
   padding-bottom: 3.5rem;
   padding-top: 6rem;
 }
 
-
-/*Media queries*/ 
+/*Media queries*/
 
 @media screen and (max-width: 908px) {
   .service-cards {

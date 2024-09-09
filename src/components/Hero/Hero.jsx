@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <p>EMS Contracting</p>
-        <h1>Delivering first-class commercial maintenance nationwide 24/7</h1>
+        <h3>Delivering first-class commercial maintenance nationwide 24/7</h3>
         <button>Make an Enquiry</button>
       </div>
     </section>

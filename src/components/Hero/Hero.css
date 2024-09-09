@@ -16,9 +16,8 @@
   gap: 2.8rem;
 }
 
-.hero .container h1 {
+.hero .container h3 {
   max-width: 54rem;
-  font-size: 4.8rem;
   line-height: 7.2rem;
 }
 
@@ -41,7 +40,7 @@
 
 /*media queries*/
 @media screen and (max-width: 726px){
-  .hero .container h1 {
+  .hero .container h3 {
   max-width: 54rem;
   font-size: 2.4rem;
   line-height: 2.4rem;

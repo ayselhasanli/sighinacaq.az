@@ -34,12 +34,12 @@ const Footer = () => {
             </li>
           </ul>
 
-          <form action="">
+          {/* <form action="">
             <input placeholder="Email" type="text" />
             <button className="subscribe">
               <i className="fa-solid fa-angle-right"></i>
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
 
