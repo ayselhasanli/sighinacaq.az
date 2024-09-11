@@ -1,0 +1,69 @@
+.team {
+  padding: 6rem 0;
+  width: 95%;
+  height: 100%;
+  max-width: 111rem;
+  margin-inline: auto;
+}
+
+.team p.team-heading {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 6rem;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+
+.team p.team-heading::after {
+  content: "";
+  width: 10%;
+  left: 45%;
+  margin: 0 auto;
+  height: 2px;
+  bottom: 0rem;
+  background-color: var(--color-black);
+  position: absolute;
+  display: block;
+}
+
+.team p.team-heading span {
+  font-weight: 700;
+}
+
+.team .team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 3rem;
+  padding-top: 3.7rem;
+}
+
+.team .team-cards .team-card {
+  box-shadow: rgba(248, 234, 217, 255) 0px 3px 8px;
+}
+
+.team .team-cards .team-card .card-img {
+  padding: 3rem 6rem;
+}
+
+.team .team-cards .team-card .card-info {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.team .team-cards .team-card .card-info .name-info {
+  font-size: 2.7rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+.team .team-cards .team-card .card-info .mail-info {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .team {
+    padding: 2rem 0;
+  }
+}

@@ -1,9 +1,11 @@
 import React from 'react'
 import MainLayout from '../../layouts/MainLayout'
+import PageHeading from '../../components/PageHeading/PageHeading'
+import section_img from "../../assets/media/about-page.png"
 
 const AboutPage = () => {
   return (
-   <h1>About</h1>
+   <PageHeading title={"About us"} img={section_img}/>
   )
 }
 

@@ -15,39 +15,35 @@ const Header = () => {
   return (
     <header className="sticky">
       <nav className="container">
-        <div className="logo">
-          <NavLink smooth={true} to="/">
+        <NavLink smooth={true} to="/">
+          <div className="logo">
             <img src={logo} alt="header-logo" />
-          </NavLink>
-        </div>
+          </div>
+        </NavLink>
 
         <ul className={`nav-menu ${mobMenu ? "" : "show-mob-menu"}`}>
           <li>
-            <NavLink
-              smooth={true}
-              offset={0}
-              to="#services"
-            >
+            <NavLink smooth={true} offset={0} to="/services">
               Our Services
             </NavLink>
           </li>
           <li>
-            <NavLink smooth={true} offset={0} to="#blogs">
+            <NavLink smooth={true} offset={0} to="/blogs">
               Blogs
             </NavLink>
           </li>
           <li>
-            <NavLink smooth={true} offset={0} to="#projects">
+            <NavLink smooth={true} offset={0} to="/projects">
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink smooth={true} offset={0} to="#contact">
+            <NavLink smooth={true} offset={0} to="/contact">
               Contact Us
             </NavLink>
           </li>
           <li>
-            <NavLink smooth={true} offset={0} to="#about">
+            <NavLink smooth={true} offset={0} to="/about">
               About Us
             </NavLink>
           </li>
