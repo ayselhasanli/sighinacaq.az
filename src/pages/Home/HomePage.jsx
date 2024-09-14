@@ -10,7 +10,7 @@ import Contact from "../../components/Contact/Contact";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="page">
       <Hero />
       <About />
       <Projects />
@@ -18,7 +18,7 @@ const HomePage = () => {
       <ScheduleService/>
       <Partners/>
       <Contact/>
-    </>
+    </div>
   );
 };
 

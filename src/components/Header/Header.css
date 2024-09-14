@@ -22,7 +22,7 @@ header .container .nav-menu li {
   position: relative;
 }
 
-header .container .nav-menu li a:after {
+header .container .nav-menu li a.active:after{
   content: "";
   position: absolute;
   top: 25px;
@@ -30,15 +30,8 @@ header .container .nav-menu li a:after {
   width: 40%;
   background-color: var(--color-orange);
   height: 2px;
-  display: none;
-}
- 
-header .container .nav-menu li a:hover:after,
-header .container .nav-menu li a:focus:after,
-header .container .nav-menu li a:active:after {
   display: block;
 }
- 
 
 header .container .nav-menu .btn {
   display: none;

@@ -1,0 +1,99 @@
+.service-detail {
+  padding: 6rem 0;
+}
+
+.service-detail .container {
+  width: 95%;
+  height: 100%;
+  max-width: 111rem;
+  margin-inline: auto;
+  display: flex;
+  gap: 6rem;
+}
+
+.service-detail .container .navbar {
+  flex: 1;
+}
+
+.service-detail .container .content {
+  flex: 2;
+}
+
+.service-detail .container .navbar ul li {
+  padding: 3rem 2.5rem;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  line-height: 2rem;
+  font-size: 1.6rem;
+  border-top: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+} 
+
+.service-detail .container .navbar ul li.active-section {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  border-left: 10px solid var(--color-orange);
+}
+
+.service-detail .container .content   {
+  max-width: 67rem;
+  position: relative;
+}
+
+.service-detail .container .content .content-section {
+  opacity: 0;
+  transform: translateY(20px);  
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  width: 100%;  
+}
+
+.service-detail .container .content .content-section.show {
+  opacity: 1;
+  transform: translateY(0);  
+}
+
+.service-detail .container .content div img {
+  max-height: 57rem;
+  height: 57rem;
+  border-radius: 1rem;
+}
+
+.service-detail .container .content h2 {
+  font-size: 4.6rem;
+  line-height: 5.6rem;
+  font-weight: 600;
+  max-width: 49rem;
+  padding: 3.5rem 0 1rem 0;
+}
+
+.service-detail .container .content h5 {
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  font-weight: 600;
+  padding: 2.5rem 0 1rem 0;
+}
+
+.service-detail .container .content ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.service-detail .container .content .service-details  ul {
+  list-style-type: none;
+  display: flex;
+  gap: 9.5rem;
+  padding-top: 2.5rem;
+}
+
+.service-detail .container .content .service-details  ul li img{
+  width: 9.5rem;
+  height: 9.5rem;
+}
+
+.service-detail .container .content .service-details ul li p{
+    text-align: center;
+    color: var(--color-second-gray);
+}

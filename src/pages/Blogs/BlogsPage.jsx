@@ -5,9 +5,9 @@ import PageHeading from '../../components/PageHeading/PageHeading';
 
 const BlogsPage = () => {
   return (
-    <>
-      <PageHeading img={section_img} title={"Blogs"}/>
-    </>
+    <div className="page">
+      <PageHeading img={section_img} title={"Blogs"} />
+    </div>
   );
 }
 

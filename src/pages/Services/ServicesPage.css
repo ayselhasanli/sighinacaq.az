@@ -1,0 +1,10 @@
+.services-container {
+  width: 95%;
+  height: 100%;
+  max-width: 111rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(270px, 1fr) );
+  gap: 2.5rem;
+  padding: 10rem 0 6rem 0
+}

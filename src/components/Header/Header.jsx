@@ -85,19 +85,29 @@ const Header = () => {
       <nav className="tab-menu">
         <ul className="container">
           <li>
-            <Link>Our Services</Link>
+            <NavLink smooth={true} offset={0} to="/services">
+              Our Services
+            </NavLink>
           </li>
           <li>
-            <Link>Training</Link>
+            <NavLink smooth={true} offset={0} to="/blogs">
+              Blogs
+            </NavLink>
           </li>
           <li>
-            <Link>Projects</Link>
+            <NavLink smooth={true} offset={0} to="/projects">
+              Projects
+            </NavLink>
           </li>
           <li>
-            <Link>Contact Us</Link>
+            <NavLink smooth={true} offset={0} to="/contact">
+              Contact Us
+            </NavLink>
           </li>
           <li>
-            <Link>About Us</Link>
+            <NavLink smooth={true} offset={0} to="/about">
+              About Us
+            </NavLink>
           </li>
         </ul>
       </nav>

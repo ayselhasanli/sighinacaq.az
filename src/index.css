@@ -7,6 +7,7 @@
   --color-light-gray: #f0f0f0;
   --color-lighter-gray: #e0e0e0;
   --color-gray: #828282;
+  --color-second-gray: #6B6B6B;
   --overlay: rgba(0,0,0,0.2)
 }
 
@@ -29,4 +30,21 @@
   height: 100%; 
   max-width: 142rem;
   margin-inline: auto;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
