@@ -100,7 +100,7 @@ const ServiceDetail = () => {
             </li>
           </ul>
         </nav>
-
+        
         <div className="content">
           {activeSection === "electrical" && (
             <div className={`content-section ${showContent ? "show" : ""}`}>
