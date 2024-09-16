@@ -8,7 +8,7 @@
   --color-lighter-gray: #e0e0e0;
   --color-gray: #828282;
   --color-second-gray: #6B6B6B;
-  --overlay: rgba(0,0,0,0.2)
+  --overlay: rgba(0,0,0,0.4)
 }
 
 .sticky {

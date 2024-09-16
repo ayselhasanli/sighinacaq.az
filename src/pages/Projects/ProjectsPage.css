@@ -1,0 +1,65 @@
+.project-page-cards{
+    padding: 16rem 0;
+}
+
+
+.project-page-cards .container{
+    width: 95%;
+  height: 100%;
+  max-width: 111rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(270px, 1fr) );
+  gap: 2.5rem;
+}
+
+.project-page-card {
+  flex-basis: 31%;
+  position: relative;
+}
+
+.project-page-card img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  display: block;
+  max-height: 44rem;
+  height: 44rem;
+}
+
+.project-page-card .card-img{
+  position: relative;
+}
+
+.project-page-card .card-img .img-overlay {
+  padding-top: 70%;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--overlay);
+  color: var(--color-white);
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  cursor: pointer;
+} 
+
+.project-page-card button {
+  width: 100%;
+  transition: 0.3s;
+  padding: 1.4rem 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-page-card:hover button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.project-page-card button i {
+  font-size: 1.6rem;
+}

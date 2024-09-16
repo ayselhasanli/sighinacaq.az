@@ -3,23 +3,19 @@
   position: relative;
 }
 
- .project-card img {
+.project-card img {
   border-radius: 1rem 1rem 0rem 0rem;
   display: block;
   max-height: 44rem;
   height: 44rem;
 }
 
- .project-card:hover .img-overlay {
-  opacity: 1;
-  visibility: visible;
-  padding-top: 0;
+.project-card .card-img{
+  position: relative;
 }
 
-.project-card .img-overlay {
-  opacity: 0;
+.project-card .card-img .img-overlay {
   padding-top: 70%;
-  visibility: hidden;
   border-radius: 1rem;
   position: absolute;
   top: 0;
@@ -33,28 +29,31 @@
   justify-content: end;
   flex-direction: column;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.project-card .img-overlay p {
+.project-card p {
   padding-left: 2.7rem;
   max-width: 24rem;
   font-size: 2.4rem;
+  position: absolute;
+  bottom: 8.1rem;
+  color: var(--color-white);
 }
 
-.project-card .img-overlay button {
+.project-card button {
   width: 100%;
-  background-color: var(--color-blue);
+  transition: 0.3s;
   padding: 1.4rem 2.7rem;
-  color: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2.6rem;
 }
 
-.project-card .img-overlay button i {
+.project-card:hover button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.project-card button i {
   font-size: 1.6rem;
 }
-
-
