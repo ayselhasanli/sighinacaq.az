@@ -1,0 +1,90 @@
+.project-detail-page {
+  padding: 6rem 0;
+}
+
+.project-detail-page .container .project-infos {
+  display: flex;
+  gap: 3rem;
+  padding-bottom: 8.3rem;
+}
+
+.project-detail-page .container .project-infos .project-img {
+  flex: 2;
+}
+
+.project-detail-page .container .project-infos .project-info {
+  flex: 1;
+  padding: 9rem 6.5rem;
+  background-color: var(--color-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  color: var(--color-white);
+  max-width: 35rem;
+}
+
+.project-detail-page
+  .container
+  .project-infos
+  .project-info
+  ul
+  li.info-heading {
+  color: var(--color-orange);
+}
+
+.project-detail-page .container .project-details {
+  padding-bottom: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 66rem;
+}
+
+.project-detail-page .container .project-details h2 {
+  font-size: 4.6rem;
+  font-weight: 600;
+}
+
+.project-detail-page .container .page-navigation {
+  padding: 3rem 0;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-detail-page .container .page-navigation .next-project,
+.project-detail-page .container .page-navigation .prev-project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-detail-page .container .page-navigation .next-project p, 
+.project-detail-page .container .page-navigation .prev-project p {
+  font-weight: 500;
+}
+
+.project-detail-page .container .page-navigation .next-project {
+  align-items: end;
+}
+
+.project-detail-page .container .page-navigation .next-btn,
+.project-detail-page .container .page-navigation .prev-btn {
+  color: var(--color-orange);
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.project-detail-page .container .page-navigation i {
+  font-size: 1rem;
+}
+
+.project-detail-page .container .page-navigation .nav-icon img {
+   width: 3rem;
+   height: 3rem;
+}

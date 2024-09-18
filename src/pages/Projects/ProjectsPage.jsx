@@ -8,6 +8,7 @@ import project_4 from "./../../assets/media/project-4.jpg";
 import project_5 from "./../../assets/media/project-5.jpg";
 import project_6 from "./../../assets/media/project-6.jpg";
 import "./ProjectsPage.css"
+import { NavLink } from 'react-router-dom';
 
 const ProjectsPage = () => {
     const projects = [
@@ -50,15 +51,17 @@ const ProjectsPage = () => {
         <div className="container">
           {projects.map((project) => {
             return (
-              <div className="project-page-card">
-                <div className="card-img">
-                  <img src={project.img} alt="" />
-                  <div className="img-overlay"></div>
+              <NavLink to="/projectdetail">
+                <div className="project-page-card">
+                  <div className="card-img">
+                    <img src={project.img} alt="" />
+                    <div className="img-overlay"></div>
+                  </div>
+                  <button>
+                    {project.name} <i className="fa-solid fa-chevron-right"></i>
+                  </button>
                 </div>
-                <button>
-                  {project.name} <i className="fa-solid fa-chevron-right"></i>
-                </button>
-              </div>
+              </NavLink>
             );
           })}
         </div>

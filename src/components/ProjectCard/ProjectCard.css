@@ -4,7 +4,8 @@
 }
 
 .project-card img {
-  border-radius: 1rem 1rem 0rem 0rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   display: block;
   max-height: 44rem;
   height: 44rem;
@@ -16,8 +17,9 @@
 
 .project-card .card-img .img-overlay {
   padding-top: 70%;
-  border-radius: 1rem;
   position: absolute;
+   border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   top: 0;
   left: 0;
   bottom: 0;

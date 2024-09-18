@@ -74,7 +74,7 @@ const AboutPage = () => {
   return (
     <>
       <PageHeading title={"About us"} img={section_img} />
-      <section className="about-content">
+      <section className="about-page-content">
         <div className="container">
           <div>
             <img src={about_img} alt="" />

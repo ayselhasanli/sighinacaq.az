@@ -1,4 +1,4 @@
-.about-content {
+.about-page-content {
   margin: 6rem 0;
 }
 
@@ -9,16 +9,16 @@
   margin-inline: auto;
 }
 
-.about-content .container {
+.about-page-content .container {
   display: flex;
   gap: 6rem;
 }
 
-.about-content .container > div {
+.about-page-content .container > div {
   flex: 1;
 }
 
-.about-content h5 {
+.about-page-content h5 {
   color: var(--color-orange);
   font-size: 1.8rem;
   line-height: 3.2rem;
@@ -26,7 +26,7 @@
   padding-top: 5rem;
 }
 
-.about-content h2 {
+.about-page-content h2 {
   font-size: 4.6rem;
   line-height: 5.6rem;
   font-weight: 600;
@@ -34,13 +34,13 @@
   padding-top: 1.6rem;
 }
 
-.about-content p {
+.about-page-content p {
   font-size: 1.6rem;
   padding-top: 1.9rem;
   max-width: 42rem;
 }
 
-.about-content img {
+.about-page-content img {
   border-radius: 1rem;
 }
 
