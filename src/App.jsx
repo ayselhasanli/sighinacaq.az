@@ -9,6 +9,7 @@ import ContactPage from "./pages/Contact/ContactPage";
 import ServiceDetail from "./pages/ServiceDetail/ServiceDetail";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import ProjectDetailPage from "./pages/ProjectDetail/ProjectDetailPage";
+import BlogDetail from "./pages/BlogDetail/BlogDetail";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/servicedetail" element={<ServiceDetail />} />
             <Route path="/projectdetail" element={<ProjectDetailPage />} />
+            <Route path="/blogDetail" element={<BlogDetail />} />
           </Route>
         </Routes>
       </CSSTransition>

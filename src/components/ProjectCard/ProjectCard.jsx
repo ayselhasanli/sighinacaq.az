@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard.css";
 
-const ProjectCard = ({ title, img }) => {
+const ProjectCard = ({ title, img, btn_text }) => {
   return (
     <div className="project-card">
       <div className="card-img">
@@ -10,7 +10,7 @@ const ProjectCard = ({ title, img }) => {
       </div>
       <p>{title}</p>
       <button>
-        Book now <i className="fa-solid fa-chevron-right"></i>
+        {btn_text} <i className="fa-solid fa-chevron-right"></i>
       </button>
     </div>
   );

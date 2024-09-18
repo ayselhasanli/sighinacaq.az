@@ -1,0 +1,11 @@
+.blog-img h3{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    color: var(--color-white);
+}
+
+.blog-content{
+    padding: 3rem 0;
+    line-height: 1.8;
+}
+
