@@ -108,21 +108,11 @@ header .container .nav-menu li:has(> .header-socials) {
   opacity: 1;
 } 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 726px) {
   header .container .nav-menu {
-    display: none;
-  }
-
-  header .tab-menu {
-    display: block;
-    background-color: var(--color-black);
-  }
-
-  header .tab-menu ul {
-    display: flex;
-    justify-content: space-between;
-    color: var(--color-white);
-  }
+  display: flex;
+  gap: 2rem;
+}
 }
 
 @media screen and (max-width: 600px) {

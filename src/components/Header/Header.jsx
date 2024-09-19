@@ -7,7 +7,7 @@ const Header = () => {
   const [mobMenu, setMobMenu] = useState(true);
   const [navMenu, setNavMenu] = useState([]);
   const [isExpanded, setIsExpanded] = useState(false);  
-  const [inputValue, setInputValue] = useState("")
+const [links, setLinks] = useState([]);
 
   const handleSearchClick = () => {
     setIsExpanded((prevState) => !prevState);  
@@ -22,6 +22,10 @@ const Header = () => {
     fetch("http://localhost:3000/navbar")
       .then((response) => response.json())
       .then((data) => setNavMenu(data));
+
+      fetch("http://localhost:3000/socialLinks")
+        .then((response) => response.json())
+        .then((data) => setLinks(data));
   }, []);
 
   const toggleMenu = () => {
@@ -47,18 +51,15 @@ const Header = () => {
             );
           })}
           <li className="header-socials">
-            <button>
-              <i className="fa-brands fa-facebook-f"></i>
-            </button>
-            <button>
-              <i className="fa-brands fa-twitter"></i>
-            </button>
-            <button>
-              <i className="fa-brands fa-instagram"></i>
-            </button>
-            <button>
-              <i className="fa-brands fa-youtube"></i>
-            </button>
+            {links.map((link) => {
+              return (
+                  <NavLink key={link.id} to={link.to}>
+                    <button className=" ">
+                      <i className={`${link.icon}`}></i>
+                    </button>
+                  </NavLink>
+              );
+            })} 
           </li>
         </ul>
 

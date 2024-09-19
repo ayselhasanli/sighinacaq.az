@@ -32,7 +32,7 @@
 }
 
 .service-detail .container .content {
-  max-width: 67rem;
+  max-width: 100%;
   position: relative;
 }
 
@@ -118,5 +118,28 @@
   .service-detail .container .content .service-details {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .service-detail .container .content .service-details ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .service-detail .container .content .service-details ul {
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .service-detail .container .content .service-details ul li img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .service-detail .container .content .service-details ul li p {
+    font-size: 1.2rem;
+    max-width: 4;
   }
 }

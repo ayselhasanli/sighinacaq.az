@@ -24,6 +24,20 @@ const Services = () => {
         <div className="service-cards">
           <Swiper
             slidesPerView={3}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              576: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 3,
+              },
+            }}
             spaceBetween={30}
             pagination={{
               clickable: true,
