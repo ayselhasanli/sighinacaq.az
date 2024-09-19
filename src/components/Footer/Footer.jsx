@@ -1,29 +1,40 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Footer = () => {
   const [navMenu, setNavMenu] = useState([]);
   const [services, setServices] = useState([]);
   const [contactInfo, setContactInfo] = useState([]);
+  const [links, setLinks] = useState([])
+
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  };
 
   useEffect(() => {
     fetch("http://localhost:3000/navbar")
       .then((response) => response.json())
       .then((data) => setNavMenu(data));
-  }, []);
 
-  useEffect(() => {
     fetch("http://localhost:3000/services")
       .then((response) => response.json())
       .then((data) => setServices(data));
-  }, []);
 
-  useEffect(() => {
     fetch("http://localhost:3000/contactInfos")
       .then((response) => response.json())
       .then((data) => setContactInfo(data));
-  }, []);
+
+      fetch("http://localhost:3000/socialLinks")
+        .then((response) => response.json())
+        .then((data) => setLinks(data));
+  }, []); 
 
   return (
     <footer>
@@ -33,7 +44,9 @@ const Footer = () => {
           {navMenu.map((menuItem) => {
             return (
               <li className="menu-item" key={menuItem.id}>
-                <NavLink to={menuItem.link}>{menuItem.title}</NavLink>
+                <NavLink onClick={ScrollToTop} to={menuItem.link}>
+                  {menuItem.title}
+                </NavLink>
               </li>
             );
           })}
@@ -43,7 +56,7 @@ const Footer = () => {
           {services.map((service) => {
             return (
               <li className="menu-item" key={service.id}>
-                <NavLink to={`/services/${service.id}`}>
+                <NavLink onClick={ScrollToTop} to={`/services/${service.id}`}>
                   {service.title}
                 </NavLink>
               </li>
@@ -62,26 +75,19 @@ const Footer = () => {
         })}
         <div className="social-links">
           <ul className="socials">
-            <li>
-              <button className="btn">
-                <i className="fa-brands fa-facebook-f"></i>
-              </button>
-            </li>
-            <li>
-              <button className="btn">
-                <i className="fa-brands fa-twitter"></i>
-              </button>
-            </li>
-            <li>
-              <button className="btn">
-                <i className="fa-brands fa-instagram"></i>
-              </button>
-            </li>
-            <li>
-              <button className="btn">
-                <i className="fa-brands fa-youtube"></i>
-              </button>
-            </li>
+            {
+              links.map((link) => {
+                return (
+                  <li key={link.id}>
+                    <NavLink to={link.to}>
+                      <button className="btn">
+                        <i className={`${link.icon}`}></i>
+                      </button>
+                    </NavLink>
+                  </li>
+                );
+              })
+            } 
           </ul>
         </div>
       </div>

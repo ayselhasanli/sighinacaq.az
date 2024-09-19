@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "./../../assets/media/logo.png";
-import searchIcon from "./../../assets/media/navbar-search.png";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [mobMenu, setMobMenu] = useState(true);
   const [navMenu, setNavMenu] = useState([]);
+  const [isExpanded, setIsExpanded] = useState(false);  
+  const [inputValue, setInputValue] = useState("")
+
+  const handleSearchClick = () => {
+    setIsExpanded((prevState) => !prevState);  
+  };
+
+  const handleSubmit = (e) => {
+    setInputValue(e.target.value)
+    console.log(value)
+  }
+  
   useEffect(() => {
     fetch("http://localhost:3000/navbar")
       .then((response) => response.json())
@@ -20,7 +31,7 @@ const Header = () => {
   return (
     <header className="sticky">
       <nav className="container">
-        <NavLink  to="/">
+        <NavLink to="/">
           <div className="logo">
             <img src={logo} alt="header-logo" />
           </div>
@@ -49,19 +60,24 @@ const Header = () => {
               <i className="fa-brands fa-youtube"></i>
             </button>
           </li>
-          <li>
-            <button className="btn">
-              <i className="fa-solid fa-magnifying-glass"></i>
-              Search
-            </button>
-          </li>
         </ul>
 
-        <button className="btn">
-          <img src={searchIcon} alt="" />
-          Search
-        </button>
-
+        {/* <div className={`search-container ${isExpanded ? "expanded" : ""}`}>
+          <form action="" onsubmit={handleSubmit(e)}>
+            <input
+            type="text"
+            className="search-input"
+            placeholder="search"
+            style={{
+              width: isExpanded ? "20rem" : "0",
+              opacity: isExpanded ? 1 : 0,
+            }}
+          />
+          <button className="search-button btn" onClick={handleSearchClick}>
+            <i className={`fa fa-search ${isExpanded ? "rotate" : ""}`}></i>
+          </button>
+          </form>
+        </div> */}
         <button
           onClick={toggleMenu}
           className={`mob-menu-btn ${mobMenu ? "" : "mob-menu-icon__white"}`}

@@ -308,5 +308,49 @@
       "phoneNumber": "+91 8630 816230",
       "mail": "parashard641@gmail.com"
     }
+  ],
+
+  "contactList": [
+    {
+      "id": 0,
+      "contact": "PHONE",
+      "info": "03 5432 1234",
+      "icon": "media/phone.png"
+    },
+    {
+      "id": 1,
+      "contact": "FAX",
+      "info": "03 5432 1234",
+      "icon": "media/fax.png"
+    },
+    {
+      "id": 2,
+      "contact": "EMAIL",
+      "info": "info@marcc.com.au",
+      "icon": "media/email.png"
+    }
+  ],
+
+  "socialLinks": [
+    {
+      "id": 0,
+      "icon": "fa-brands fa-facebook-f",
+      "to": "https://www.facebook.com/"
+    },
+    {
+      "id": 1,
+      "icon": "fa-brands fa-twitter",
+      "to": "https://x.com/?lang=tr"
+    },
+    {
+      "id": 2,
+      "icon": "fa-brands fa-instagram",
+      "to": "https://www.instagram.com/"
+    },
+    {
+      "id": 3,
+      "icon": "fa-brands fa-youtube",
+      "to": "https://www.youtube.com/"
+    }
   ]
 }
