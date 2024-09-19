@@ -1,11 +1,6 @@
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(270px, 1fr) );
-  gap: 2.5rem;
-}
-
 .projects h2 {
   font-weight: 500;
   padding-bottom: 3.5rem;
   padding-top: 6rem;
 }
+

@@ -1,5 +1,6 @@
 .project-card {
   flex-basis: 31%;
+  scroll-snap-align: start;
   position: relative;
 }
 
@@ -11,14 +12,14 @@
   height: 44rem;
 }
 
-.project-card .card-img{
+.project-card .card-img {
   position: relative;
 }
 
 .project-card .card-img .img-overlay {
   padding-top: 70%;
   position: absolute;
-   border-top-left-radius: 1rem;
+  border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   top: 0;
   left: 0;

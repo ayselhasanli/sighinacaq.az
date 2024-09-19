@@ -18,7 +18,7 @@
 
 .hero .container h3 {
   max-width: 54rem;
-  line-height: 7.2rem;
+  line-height: clamp(2.4rem, 5vw, 7.2rem);
 }
 
 .hero .container p {
@@ -36,13 +36,4 @@
 
 .hero .container button:hover {
   transform: scale(1.2);
-}
-
-/*media queries*/
-@media screen and (max-width: 726px){
-  .hero .container h3 {
-  max-width: 54rem;
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-}
 }

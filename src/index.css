@@ -48,3 +48,12 @@
   opacity: 0;
   transition: opacity 500ms ease-in;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+ 
+.swiper-pagination{
+  display: none;
+}

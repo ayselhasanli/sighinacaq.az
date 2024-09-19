@@ -1,28 +1,20 @@
-import React from "react";
-import "./Projects.css";
-import project_1 from "./../../assets/media/project-1.jpg";
-import project_2 from "./../../assets/media/project-2.jpg";
-import project_3 from "./../../assets/media/project-3.jpg";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import "./Projects.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "Electrical and Mechanical",
-      img: project_1,
-    },
-    {
-      id: 2,
-      title: "Air Conditioning and Ventilation",
-      img: project_2,
-    },
-    {
-      id: 3,
-      title: "Refrigeration",
-      img: project_3,
-    },
-  ];
+   const [projects, setProjects] = useState([]);
+   useEffect(() => {
+     fetch("http://localhost:3000/projects")
+       .then((response) => response.json())
+       .then((data) => setProjects(data));
+   }, []); 
+
   return (
     <section className="projects" id="projects">
       <div className="section-heading">
@@ -30,13 +22,30 @@ const Projects = () => {
       </div>
       <div className="container">
         <div className="project-cards">
-          {
-            projects.map((project) => {
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {projects.map((project) => {
               return (
-                <ProjectCard key={project.id} title={project.title} img={project.img}/>
-              )
-            })
-          }
+                <SwiperSlide>
+                  <NavLink to={`/projects/${project.id}`}>
+                    <ProjectCard
+                      key={project.id}
+                      name={project.name}
+                      img={project.img}
+                      btn_text={project.btn_text}
+                    />
+                  </NavLink>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
     </section>

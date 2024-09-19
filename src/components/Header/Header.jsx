@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "./../../assets/media/logo.png";
 import searchIcon from "./../../assets/media/navbar-search.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [mobMenu, setMobMenu] = useState(true);
-  // const [active, setActive] = useState(false)
+  const [navMenu, setNavMenu] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/navbar")
+      .then((response) => response.json())
+      .then((data) => setNavMenu(data));
+  }, []);
 
   const toggleMenu = () => {
     mobMenu ? setMobMenu(false) : setMobMenu(true);
@@ -20,33 +25,16 @@ const Header = () => {
             <img src={logo} alt="header-logo" />
           </div>
         </NavLink>
-
         <ul className={`nav-menu ${mobMenu ? "" : "show-mob-menu"}`}>
-          <li>
-            <NavLink smooth={true} offset={0} to="/services">
-              Our Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/blogs">
-              Blogs
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/projects">
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/contact">
-              Contact Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/about">
-              About Us
-            </NavLink>
-          </li>
+          {navMenu.map((menuItem) => {
+            return (
+              <li key={menuItem.id}>
+                <NavLink smooth={true} offset={0} to={menuItem.link}>
+                  {menuItem.title}
+                </NavLink>
+              </li>
+            );
+          })}
           <li className="header-socials">
             <button>
               <i className="fa-brands fa-facebook-f"></i>
@@ -84,31 +72,15 @@ const Header = () => {
 
       <nav className="tab-menu">
         <ul className="container">
-          <li>
-            <NavLink smooth={true} offset={0} to="/services">
-              Our Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/blogs">
-              Blogs
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/projects">
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/contact">
-              Contact Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink smooth={true} offset={0} to="/about">
-              About Us
-            </NavLink>
-          </li>
+          {navMenu.map((menuItem) => {
+            return (
+              <li key={menuItem.id}>
+                <NavLink smooth={true} offset={0} to={menuItem.link}>
+                  {menuItem.title}
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

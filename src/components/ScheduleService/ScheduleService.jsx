@@ -1,6 +1,7 @@
 import React from 'react'
 import "./ScheduleService.css"
 import icon from "../../assets/media/schedule-icon.png"
+import { NavLink } from 'react-router-dom';
 
 const ScheduleService = () => {
   return (
@@ -16,9 +17,11 @@ const ScheduleService = () => {
           </p>
         </div>
         <div className="schedule-btn">
-          <button>
-            Schedule a Service <i className="fa-solid fa-chevron-right"></i>
-          </button>
+          <NavLink to={"/services"}>
+            <button>
+              Schedule a Service <i className="fa-solid fa-chevron-right"></i>
+            </button>
+          </NavLink>
         </div>
       </div>
     </section>

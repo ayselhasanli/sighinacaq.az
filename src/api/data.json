@@ -1,0 +1,273 @@
+{
+  "services": [
+    {
+      "id": 0,
+      "title": "Electrical and Mechanical",
+      "img": "media/services-1.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 1,
+      "title": "Air Conditioning and Ventilation",
+      "img": "media/services-2.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 2,
+      "title": "Refrigeration",
+      "img": "media/services-3.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 3,
+      "title": "F Gas Regulation",
+      "img": "media/services-4.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 4,
+      "title": "Renewable Energy and Heating",
+      "img": "media/services-5.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 5,
+      "title": "Electricity and Gas Metering",
+      "img": "media/services-6.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 6,
+      "title": "Waste Recycling",
+      "img": "media/services-7.jpg",
+      "btn_text": "Book now"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "name": "Crook Church Hope Bank",
+      "date": "September 15, 2021",
+      "client": "Industrial Company",
+      "location": "New York, USA",
+      "category": "Home Protection",
+      "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img": "media/services-1.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 2,
+      "name": "LED Lighting Project",
+      "date": "July 21, 2021",
+      "client": "Industrial Company",
+      "location": "New York, USA",
+      "category": "Home Protection",
+      "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img": "media/services-2.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 3,
+      "name": "Lab and Mezzanine...",
+      "date": "January 12, 2011",
+      "client": "Industrial Company",
+      "location": "New York, USA",
+      "category": "Home Protection",
+      "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img": "media/services-3.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 4,
+      "name": "Parker Hannifin...",
+      "date": "September 15, 2021",
+      "client": "Industrial Company",
+      "location": "New York, USA",
+      "category": "Home Protection",
+      "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img": "media/services-4.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 5,
+      "name": "Port of Call, Sunderland",
+      "date": "September 15, 2021",
+      "client": "Industrial Company",
+      "location": "New York, USA",
+      "category": "Home Protection",
+      "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img": "media/services-5.jpg",
+      "btn_text": "Book now"
+    },
+    {
+      "id": 6,
+      "name": "SG Petch - Mazda LED...",
+      "date": "September 15, 2021",
+      "client": "Industrial Company",
+      "location": "New York, USA",
+      "category": "Home Protection",
+      "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "img": "media/services-6.jpg",
+      "btn_text": "Book now"
+    }
+  ],
+
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Welcome to EMS Training",
+      "img": "media/blog-1.png",
+      "btn_text": "Read now",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": 2,
+      "title": "CUSTOM BUILT CENTRE 2022",
+      "img": "media/blog-2.png",
+      "btn_text": "Read now",
+      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+    }
+  ],
+
+  "navbar": [
+    {
+      "id": 1,
+      "title": "Our Services",
+      "link": "/services"
+    },
+    {
+      "id": 2,
+      "title": "Projects",
+      "link": "/projects"
+    },
+    {
+      "id": 3,
+      "title": "Blogs",
+      "link": "/blogs"
+    },
+    {
+      "id": 4,
+      "title": "Contact",
+      "link": "/contact"
+    },
+    {
+      "id": 1,
+      "title": "About us",
+      "link": "/about"
+    }
+  ],
+
+  "hero": [
+    {
+      "id": 1,
+      "heading": "EMS Contracting",
+      "text": "Delivering first-class commercial maintenance nationwide 24/7"
+    }
+  ],
+
+  "aboutSection": [
+    {
+      "heading": "Welcome to EMS Contracting",
+      "img": "media/about.png",
+      "text": "EMS Contracting, founded in 2013 by Mick Donkin and Kris Armstrong then later joined by key director Daryl Shepherd, incorporates 3 divisions - Metering, Renewables and Recycling.",
+      "iconGroup": [
+        {
+          "id": 1,
+          "icon": "media/about-icon-1.png"
+        },
+        {
+          "id": 2,
+          "icon": "media/about-icon-2.png"
+        },
+        {
+          "id": 3,
+          "icon": "media/about-icon-3.png"
+        },
+        {
+          "id": 4,
+          "icon": "media/about-icon-4.png"
+        }
+      ]
+    }
+  ],
+
+  "aboutValues": [
+    {
+      "id": 0,
+      "img": "media/about-value-icon-1.png",
+      "name": "Integrity",
+      "content": "Acting with strong ethics is a priority for everyone representing the organization as well as the company’s behaviour as a whole."
+    },
+    {
+      "id": 1,
+      "img": "media/about-value-icon-2.png",
+      "name": "Honesty",
+      "content":
+        "It’s not just the best policy, it’s a core business practice to act in a transparent, trustworthy manner that earns the respect of colleagues, customers and the public."
+    },
+    {
+      "id": 2,
+     "img": "media/about-value-icon-3.png",
+      "name": "Fairness",
+      "content":
+        "Treating everyone with the common decency we all deserve and expect."
+    },
+    {
+      "id": 3,
+      "img": "media/about-value-icon-4.png",
+      "name": "Accountability",
+      "content":
+        "Accepting responsibility for your actions (and inactions) is the ultimate way to build trust internally and externally."
+    },
+    {
+      "id": 4,
+      "img": "media/about-value-icon-5.png",
+      "name": "Commitment to Deliver",
+      "content":
+        "Creating a great customer experience begins with staying true to the words we speak and the bonds we make."
+    },
+    {
+      "id": 5,
+      "img": "media/about-value-icon-6.png",
+      "name": "Diversion & Inclusion",
+      "content":
+        "Organisations succeed by bringing different lived experiences and a range of backgrounds into a shared environment where everyone has equal opportunity."
+    },
+    {
+      "id": 6,
+      "img": "media/about-value-icon-7.png",
+      "name": "Learning",
+      "content":
+        "No one has all the answers. A culture of humility and continuous learning is a bedrock principle of successful companies."
+    },
+    {
+      "id": 7,
+      "img": "media/about-value-icon-8.png",
+      "name": "Temawork",
+      "content":
+        "When people work together, they can create something greater than themselves as individuals."
+    }
+  ],
+
+  "team": [
+    {
+      "id": 1,
+      "name": "Mick Donkin",
+      "mail": "parashard641@gmail.com",
+      "img": "media/team-1.png"
+    },
+    {
+      "id": 2,
+      "name": "Kris Armstrong",
+      "mail": "parashard641@gmail.com",
+      "img": "media/team-2.png"
+    },
+    {
+      "id": 3,
+      "name": "Daryl Shepherd",
+      "mail": "parashard641@gmail.com",
+      "img": "media/team-3.png"
+    }
+  ]
+}

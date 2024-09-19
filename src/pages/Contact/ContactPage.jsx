@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import PageHeading from '../../components/PageHeading/PageHeading'
 import section_img from "../../assets/media/contact-page.png"
 import Contact from '../../components/Contact/Contact'
 import "./ContactPage.css"
-import team_1 from "../../assets/media/team-1.png"
-import team_2 from "../../assets/media/team-2.png";
-import team_3 from "../../assets/media/team-3.png";
 
 const ContactPage = () => {
+   const [team, setTeam] = useState([]);
+   useEffect(() => {
+     fetch("http://localhost:3000/team")
+       .then((response) => response.json())
+       .then((data) => setTeam(data));
+   }, []); 
   return (
     <>
       <PageHeading title={"Contact"} img={section_img} />
@@ -18,33 +21,21 @@ const ContactPage = () => {
         </p>
 
         <div className="team-cards">
-          <div className="team-card">
-            <div className="card-img">
-              <img src={team_1} alt="" />
-            </div>
-            <div className="card-info">
-              <p className="name-info">Mick Donkin</p>
-              <p className="mail-info">parashard641@gmail.com</p>
-            </div>
-          </div>
-          <div className="team-card">
-            <div className="card-img">
-              <img src={team_2} alt="" />
-            </div>
-            <div className="card-info">
-              <p className="name-info">Kris Armstrong</p>
-              <p className="mail-info">parashard641@gmail.com</p>
-            </div>
-          </div>
-          <div className="team-card">
-            <div className="card-img">
-              <img src={team_3} alt="" />
-            </div>
-            <div className="card-info">
-              <p className="name-info">Daryl Shepherd</p>
-              <p className="mail-info">parashard641@gmail.com</p>
-            </div>
-          </div>
+          {
+            team.map((teamInfo)=>{
+              return (
+                <div className="team-card" key={teamInfo.id}>
+                  <div className="card-img">
+                    <img src={teamInfo.img} alt="" />
+                  </div>
+                  <div className="card-info">
+                    <p className="name-info">{teamInfo.name}</p>
+                    <p className="mail-info">{teamInfo.mail}</p>
+                  </div>
+                </div>
+              );
+            })
+          } 
         </div>
       </section>
     </>
