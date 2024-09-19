@@ -1,50 +1,66 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./BlogDetail.css";
 import blog_img_1 from "../../assets/media/blog-1.png";
+import { useParams } from "react-router-dom";
 
 const BlogDetail = () => {
-     const sectionStyle = {
-       background: `linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)),
+  const { id } = useParams();
+  console.log(id)
+  const sectionStyle = {
+    background: `linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)),
     url(${blog_img_1})`,
-       backgroundSize: "cover",
-       width: "100%",
-       maxHeight: "43rem",
-       height: "43rem",
-       backgroundPosition: "center",
-       backgroundRepeat: "no-repeat",
-       display: "flex",
-       justifyContent: "center",
-       alignItems: "center",
-       borderRadius: "1rem"
-     };
+    backgroundSize: "cover",
+    width: "100%",
+    maxHeight: "43rem",
+    height: "43rem",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: "1rem",
+  };
+  
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/blogs")
+      .then((response) => response.json())
+      .then((data) => setBlogs(data));
+  }, []);
+
+
   return (
     <section className="blog-detail">
-      <div className="container">
-        <div className="blog-img " style={sectionStyle}>
-          <h3>Welcome to EMS Training</h3>
-        </div>
+        {blogs.map((blog) => {
+          if(blog.id == id){
+            return (
+              <div className="container">
+                <div
+                  className="blog-img "
+                  style={{
+                    background: `url(${blog.img})`,
+                    backgroundSize: "cover",
+                    width: "100%",
+                    maxHeight: "43rem",
+                    height: "43rem",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    borderRadius: "1rem",
+                  }}
+                >
+                  <h3>{blog.name}</h3>
+                </div>
 
-        <div className="blog-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Accusantium reiciendis facere doloribus sed sint libero, quia autem
-            aperiam. Commodi dignissimos velit, numquam temporibus quas
-            consectetur facilis placeat nulla optio est. here are many
-            variations of passages of Lorem Ipsum available, but the majority
-            have suffered alteration in some form, by injected humour, or
-            randomised words which don't look even slightly believable. If you
-            are going to use a passage of Lorem Ipsum, you need to be sure there
-            isn't anything embarrassing hidden in the middle of text. All the
-            Lorem Ipsum generators on the Internet tend to repeat predefined
-            chunks as necessary, making this the first true generator on the
-            Internet. It uses a dictionary of over 200 Latin words, combined
-            with a handful of model sentence structures, to generate Lorem Ipsum
-            which looks reasonable. The generated Lorem Ipsum is therefore
-            always free from repetition, injected humour, or non-characteristic
-            words etc.
-          </p>
-        </div>
-      </div>
+                <div className="blog-content">
+                  <p>{blog.text}</p>
+                </div>
+              </div>
+            );
+          }
+        })}
     </section>
   );
 };

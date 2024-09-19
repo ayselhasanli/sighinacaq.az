@@ -27,7 +27,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/projects/:id" element={<ProjectDetailPage />} />
-            <Route path="/blogDetail" element={<BlogDetail />} />
+            <Route path="/blogs/:id" element={<BlogDetail />} />
           </Route>
         </Routes>
       </CSSTransition>

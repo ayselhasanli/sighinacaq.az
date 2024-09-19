@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import PageHeading from '../../components/PageHeading/PageHeading';
 import section_img from "../../assets/media/services-page.jpg"; 
 import "./ProjectsPage.css";

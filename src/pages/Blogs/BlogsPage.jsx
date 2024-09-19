@@ -21,8 +21,8 @@ const BlogsPage = () => {
         <div className="container">
           {blogs.map((blog) => {
             return (
-              <NavLink to="/blogDetail">
-                <ProjectCard key={blog.id} title={blog.title} img={blog.img} btn_text={blog.btn_text} />
+              <NavLink to={`/blogs/${blog.id}`}>
+                <ProjectCard key={blog.id} name={blog.name} img={blog.img} btn_text={blog.btn_text} />
               </NavLink>
             );
           })}

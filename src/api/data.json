@@ -3,44 +3,58 @@
     {
       "id": 0,
       "title": "Electrical and Mechanical",
-      "img": "media/services-1.jpg",
-      "btn_text": "Book now"
+      "img": "https://www.owlguru.com/wp-content/uploads/wpallimport/files/electrical-engineers/__(1).jpg",
+      "btn_text": "Book now",
+      "category": "electrical",
+      "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     },
     {
       "id": 1,
       "title": "Air Conditioning and Ventilation",
-      "img": "media/services-2.jpg",
-      "btn_text": "Book now"
+      "img": "https://advanced-commercial.com/wp-content/uploads/2022/06/HVAC-system-1024x819.png",
+      "btn_text": "Book now",
+      "category": "airConditioning",
+      "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc"
     },
     {
       "id": 2,
       "title": "Refrigeration",
-      "img": "media/services-3.jpg",
-      "btn_text": "Book now"
+      "img": "https://powersscientific.com/wp-content/uploads/2019/08/aisle-buy-cold-811107-1080x675.jpg",
+      "btn_text": "Book now",
+      "category": "refrigeration",
+      "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     },
     {
       "id": 3,
       "title": "F Gas Regulation",
-      "img": "media/services-4.jpg",
-      "btn_text": "Book now"
+      "img": "https://www.eurovent.eu/wp-content/uploads/policy-updates-images/refrigerants/f-gas-regulation/refrigerants-fgas-2.jpg",
+      "btn_text": "Book now",
+      "category": "renewableEnergy",
+      "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc"
     },
     {
       "id": 4,
       "title": "Renewable Energy and Heating",
-      "img": "media/services-5.jpg",
-      "btn_text": "Book now"
+      "img": "https://news.az/uploads/2024/04/03/news/194754/original/194754-0376808.jpg",
+      "btn_text": "Book now",
+      "category": "gasMetering",
+      "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     },
     {
       "id": 5,
       "title": "Electricity and Gas Metering",
-      "img": "media/services-6.jpg",
-      "btn_text": "Book now"
+      "img": "https://www.energy.gov/sites/default/files/2021-09/natural_gas_meter_3576171.jpg",
+      "btn_text": "Book now",
+      "category": "gasRegulation",
+      "desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc"
     },
     {
       "id": 6,
       "title": "Waste Recycling",
-      "img": "media/services-7.jpg",
-      "btn_text": "Book now"
+      "img": "https://assets.kpmg.com/content/dam/kpmg/xx/images/2017/09/recycled-waste-collection-yard.jpg/jcr:content/renditions/original",
+      "btn_text": "Book now",
+      "category": "wasteRecycling",
+      "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     }
   ],
 
@@ -53,18 +67,18 @@
       "location": "New York, USA",
       "category": "Home Protection",
       "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "img": "media/services-1.jpg",
+      "img": "https://static.wixstatic.com/media/d56eef_ed3aa04448d54a43a1521fabe2f17f89~mv2.jpg/v1/crop/x_0,y_41,w_500,h_303/fill/w_700,h_423,al_c,lg_1,q_80,enc_auto/CrookChurch.jpg",
       "btn_text": "Book now"
     },
     {
       "id": 2,
       "name": "LED Lighting Project",
-      "date": "July 21, 2021",
+      "date": "July 21, 2020",
       "client": "Industrial Company",
       "location": "New York, USA",
       "category": "Home Protection",
       "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "img": "media/services-2.jpg",
+      "img": "https://static.wixstatic.com/media/d56eef_7e016ff3b93f41d88399b46d42231543~mv2.jpg/v1/crop/x_0,y_21,w_500,h_302/fill/w_699,h_423,al_c,lg_1,q_80,enc_auto/ParkerHannifin.jpg",
       "btn_text": "Book now"
     },
     {
@@ -75,40 +89,40 @@
       "location": "New York, USA",
       "category": "Home Protection",
       "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "img": "media/services-3.jpg",
+      "img": "https://static.wixstatic.com/media/d56eef_e17d68ea1b5e4d12bd21e459e3ab079b~mv2.jpg/v1/crop/x_0,y_21,w_500,h_302/fill/w_699,h_423,al_c,lg_1,q_80,enc_auto/mezzanine.jpg",
       "btn_text": "Book now"
     },
     {
       "id": 4,
       "name": "Parker Hannifin...",
-      "date": "September 15, 2021",
+      "date": "October 11, 2016",
       "client": "Industrial Company",
       "location": "New York, USA",
       "category": "Home Protection",
       "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "img": "media/services-4.jpg",
+      "img": "https://static.wixstatic.com/media/d56eef_c189122bb4754091890dc30d2a5d3dcf~mv2.jpg/v1/crop/x_0,y_21,w_500,h_302/fill/w_699,h_423,al_c,lg_1,q_80,enc_auto/parker-industrial.jpg",
       "btn_text": "Book now"
     },
     {
       "id": 5,
       "name": "Port of Call, Sunderland",
-      "date": "September 15, 2021",
+      "date": "August 15, 2023",
       "client": "Industrial Company",
       "location": "New York, USA",
       "category": "Home Protection",
       "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "img": "media/services-5.jpg",
+      "img": "https://static.wixstatic.com/media/d56eef_6a3d6e4fd47a4e4ca0e8f483537af6fb~mv2.jpg/v1/crop/x_0,y_21,w_500,h_302/fill/w_699,h_423,al_c,lg_1,q_80,enc_auto/port-of-call.jpg",
       "btn_text": "Book now"
     },
     {
       "id": 6,
       "name": "SG Petch - Mazda LED...",
-      "date": "September 15, 2021",
+      "date": "September 12, 2018",
       "client": "Industrial Company",
       "location": "New York, USA",
       "category": "Home Protection",
       "detail": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "img": "media/services-6.jpg",
+      "img": "https://static.wixstatic.com/media/d56eef_2ad73442386649c189eac730b43703ed~mv2.jpg/v1/crop/x_0,y_21,w_500,h_302/fill/w_699,h_423,al_c,lg_1,q_80,enc_auto/showroom.jpg",
       "btn_text": "Book now"
     }
   ],
@@ -116,15 +130,15 @@
   "blogs": [
     {
       "id": 1,
-      "title": "Welcome to EMS Training",
-      "img": "media/blog-1.png",
+      "name": "Welcome to EMS Training",
+      "img": "https://static.wixstatic.com/media/11062b_1c36b26cfdfb4b89ae2a138bc395e17e~mv2.jpeg/v1/fill/w_1895,h_983,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_1c36b26cfdfb4b89ae2a138bc395e17e~mv2.jpeg",
       "btn_text": "Read now",
       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     },
     {
       "id": 2,
-      "title": "CUSTOM BUILT CENTRE 2022",
-      "img": "media/blog-2.png",
+      "name": "CUSTOM BUILT CENTRE 2022",
+      "img": "https://curleyconcepts.co.uk/curleyconcepts/wp-content/uploads/2020/02/mechanical-electricalsupportservices1.jpg",
       "btn_text": "Read now",
       "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     }
@@ -203,50 +217,43 @@
       "id": 1,
       "img": "media/about-value-icon-2.png",
       "name": "Honesty",
-      "content":
-        "It’s not just the best policy, it’s a core business practice to act in a transparent, trustworthy manner that earns the respect of colleagues, customers and the public."
+      "content": "It’s not just the best policy, it’s a core business practice to act in a transparent, trustworthy manner that earns the respect of colleagues, customers and the public."
     },
     {
       "id": 2,
-     "img": "media/about-value-icon-3.png",
+      "img": "media/about-value-icon-3.png",
       "name": "Fairness",
-      "content":
-        "Treating everyone with the common decency we all deserve and expect."
+      "content": "Treating everyone with the common decency we all deserve and expect."
     },
     {
       "id": 3,
       "img": "media/about-value-icon-4.png",
       "name": "Accountability",
-      "content":
-        "Accepting responsibility for your actions (and inactions) is the ultimate way to build trust internally and externally."
+      "content": "Accepting responsibility for your actions (and inactions) is the ultimate way to build trust internally and externally."
     },
     {
       "id": 4,
       "img": "media/about-value-icon-5.png",
       "name": "Commitment to Deliver",
-      "content":
-        "Creating a great customer experience begins with staying true to the words we speak and the bonds we make."
+      "content": "Creating a great customer experience begins with staying true to the words we speak and the bonds we make."
     },
     {
       "id": 5,
       "img": "media/about-value-icon-6.png",
       "name": "Diversion & Inclusion",
-      "content":
-        "Organisations succeed by bringing different lived experiences and a range of backgrounds into a shared environment where everyone has equal opportunity."
+      "content": "Organisations succeed by bringing different lived experiences and a range of backgrounds into a shared environment where everyone has equal opportunity."
     },
     {
       "id": 6,
       "img": "media/about-value-icon-7.png",
       "name": "Learning",
-      "content":
-        "No one has all the answers. A culture of humility and continuous learning is a bedrock principle of successful companies."
+      "content": "No one has all the answers. A culture of humility and continuous learning is a bedrock principle of successful companies."
     },
     {
       "id": 7,
       "img": "media/about-value-icon-8.png",
-      "name": "Temawork",
-      "content":
-        "When people work together, they can create something greater than themselves as individuals."
+      "name": "Teamwork",
+      "content": "When people work together, they can create something greater than themselves as individuals."
     }
   ],
 
@@ -268,6 +275,29 @@
       "name": "Daryl Shepherd",
       "mail": "parashard641@gmail.com",
       "img": "media/team-3.png"
+    }
+  ],
+
+  "serviceDetails": [
+    {
+      "id": 0,
+      "title": "Low Cost",
+      "icon": "/media/service-icon-1.png"
+    },
+    {
+      "id": 1,
+      "title": "Available 24 Hours",
+      "icon": "/media/service-icon-2.png"
+    },
+    {
+      "id": 2,
+      "title": "Lisences & Insured",
+      "icon": "/media/service-icon-3.png"
+    },
+    {
+      "id": 3,
+      "title": "Skilled Handyman",
+      "icon": "/media/service-icon-4.png"
     }
   ]
 }

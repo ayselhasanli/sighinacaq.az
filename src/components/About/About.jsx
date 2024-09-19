@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import "./About.css";
+import { NavLink } from "react-router-dom";
 // import aboutImg from "./../../assets/media/about.png";
 // import service1 from "./../../assets/media/about-icon-1.png";
 // import service2 from "./../../assets/media/about-icon-2.png";
@@ -26,28 +27,23 @@ const About = () => {
                 <div className="about-content">
                   <h5>About us</h5>
                   <h2>{aboutItem.heading}</h2>
-                  <p>
-                    {aboutItem.text}
-                  </p>
+                  <p>{aboutItem.text}</p>
                   <div className="about-services">
-                    {
-                      aboutItem.iconGroup.map((icon) => {
-                        return (
-                          <div key={icon.id}>
-                            <img
-                              src={icon.icon}
-                              alt="service-icon"
-                            />
-                          </div>
-                        );
-                      })
-                    }
+                    {aboutItem.iconGroup.map((icon) => {
+                      return (
+                        <div key={icon.id}>
+                          <img src={icon.icon} alt="service-icon" />
+                        </div>
+                      );
+                    })}
                   </div>
 
                   <div className="about-button">
-                    <button>
-                      See More <i className="fa-solid fa-chevron-right"></i>
-                    </button>
+                    <NavLink to={"/about"}>
+                      <button>
+                        See More <i className="fa-solid fa-chevron-right"></i>
+                      </button>
+                    </NavLink>
                   </div>
                 </div>
               </>
