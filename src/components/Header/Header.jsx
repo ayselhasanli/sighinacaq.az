@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header className="sticky">
       <nav className="container">
-        <NavLink smooth={true} to="/">
+        <NavLink  to="/">
           <div className="logo">
             <img src={logo} alt="header-logo" />
           </div>
@@ -29,7 +29,7 @@ const Header = () => {
           {navMenu.map((menuItem) => {
             return (
               <li key={menuItem.id}>
-                <NavLink smooth={true} offset={0} to={menuItem.link}>
+                <NavLink offset={0} to={menuItem.link}>
                   {menuItem.title}
                 </NavLink>
               </li>

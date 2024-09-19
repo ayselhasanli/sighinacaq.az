@@ -1,5 +1,6 @@
 :root{
   --color-black: #000000;
+  --color-lighter-black: rgba(0,0,0,0.9);
   --color-white: #ffffff;
   --color-orange:  #e48e33;
   --color-blue: #047CD1;

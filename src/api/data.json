@@ -299,5 +299,14 @@
       "title": "Skilled Handyman",
       "icon": "/media/service-icon-4.png"
     }
+  ],
+
+  "contactInfos": [
+    {
+      "id": 0,
+      "address": "EMS, Unit 19, City Road,  Inner man Street, Switzerland, SR5 2BN",
+      "phoneNumber": "+91 8630 816230",
+      "mail": "parashard641@gmail.com"
+    }
   ]
 }
