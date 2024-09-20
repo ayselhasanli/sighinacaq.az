@@ -6,26 +6,26 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [mobMenu, setMobMenu] = useState(true);
   const [navMenu, setNavMenu] = useState([]);
-  const [isExpanded, setIsExpanded] = useState(false);  
-const [links, setLinks] = useState([]);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [links, setLinks] = useState([]);
 
   const handleSearchClick = () => {
-    setIsExpanded((prevState) => !prevState);  
+    setIsExpanded((prevState) => !prevState);
   };
 
   const handleSubmit = (e) => {
-    setInputValue(e.target.value)
-    console.log(value)
-  }
-  
+    setInputValue(e.target.value);
+    console.log(value);
+  };
+
   useEffect(() => {
     fetch("http://localhost:3000/navbar")
       .then((response) => response.json())
       .then((data) => setNavMenu(data));
 
-      fetch("http://localhost:3000/socialLinks")
-        .then((response) => response.json())
-        .then((data) => setLinks(data));
+    fetch("http://localhost:3000/socialLinks")
+      .then((response) => response.json())
+      .then((data) => setLinks(data));
   }, []);
 
   const toggleMenu = () => {
@@ -53,19 +53,18 @@ const [links, setLinks] = useState([]);
           <li className="header-socials">
             {links.map((link) => {
               return (
-                  <NavLink key={link.id} to={link.to}>
-                    <button className=" ">
-                      <i className={`${link.icon}`}></i>
-                    </button>
-                  </NavLink>
+                <NavLink key={link.id} to={link.to}>
+                  <button className=" ">
+                    <i className={`${link.icon}`}></i>
+                  </button>
+                </NavLink>
               );
-            })} 
+            })}
           </li>
         </ul>
 
-        {/* <div className={`search-container ${isExpanded ? "expanded" : ""}`}>
-          <form action="" onsubmit={handleSubmit(e)}>
-            <input
+        <div className={`search-container ${isExpanded ? "expanded" : ""}`}>
+          <input
             type="text"
             className="search-input"
             placeholder="search"
@@ -77,8 +76,7 @@ const [links, setLinks] = useState([]);
           <button className="search-button btn" onClick={handleSearchClick}>
             <i className={`fa fa-search ${isExpanded ? "rotate" : ""}`}></i>
           </button>
-          </form>
-        </div> */}
+        </div>
         <button
           onClick={toggleMenu}
           className={`mob-menu-btn ${mobMenu ? "" : "mob-menu-icon__white"}`}

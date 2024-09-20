@@ -58,7 +58,7 @@
 }
 
 .about .container .about-content button {
-  border: 2px solid var(--color-orange);
+  border: 1px solid var(--color-orange);
   padding: 1.6rem 1.2rem;
   border-radius: 0.4rem;
   display: flex;
@@ -67,6 +67,25 @@
   line-height: 2rem;
   font-weight: 700;
   transition: 0.5s ease;
+  position: relative;
+}
+
+.about .container .about-content button:after {
+  position: absolute;
+  transition: .3s ease;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  height: 0.2rem;
+  background-color: var(--color-orange);
+}
+
+.about .container .about-content button:hover {
+  box-shadow: inset 0px 0px 0px 2px var(--color-orange);
+}
+
+.about .container .about-content button:hover:after {
+  width: 0%;
 }
 
 /*media queries*/
