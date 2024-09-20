@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/projects")
+    fetch("http://localhost:3000/services")
       .then((response) => response.json())
       .then((data) => setServices(data));
   }, []);
@@ -51,7 +51,7 @@ const Services = () => {
                   <NavLink to={`/services/${service.id}`}>
                     <ProjectCard
                       key={service.id}
-                      name={service.name}
+                      name={service.title}
                       img={service.img}
                       btn_text={service.btn_text}
                     />

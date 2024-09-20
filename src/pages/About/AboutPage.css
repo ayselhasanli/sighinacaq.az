@@ -92,20 +92,20 @@
 }
 
 @media screen and (max-width: 765px) {
-  .about-content {
+  .about-page-content {
     margin: 3rem 0;
   }
-  .about-content .container {
+  .about-page-content .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .about-content .container > div:nth-child(2) {
+  .about-page-content .container > div:nth-child(2) {
     order: -1;
   }
 
-  .about-content p {
+  .about-page-content p {
     max-width: 100%;
   }
 }

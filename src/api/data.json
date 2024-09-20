@@ -352,5 +352,14 @@
       "icon": "fa-brands fa-youtube",
       "to": "https://www.youtube.com/"
     }
+  ],
+
+  "scheduleService": [
+    {
+      "id": 0,
+      "icon": "media/schedule-icon.png",
+      "text": "You will be satisfy with our work contact us today & help is on the way",
+      "btnText": "Schedule a Service"
+    }
   ]
 }
