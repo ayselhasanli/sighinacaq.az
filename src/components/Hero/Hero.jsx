@@ -14,11 +14,13 @@ const Hero = () => {
         {
           hero.map((heroItem) => {
             return (
-              <>
+              <div>
                 <p>{heroItem.heading}</p>
-                <h3>{heroItem.text}</h3>
+                <h4>
+                  Delivering first-class commercial maintenance nationwide <br /> 24/7
+                </h4>
                 <button>Make an Enquiry</button>
-              </>
+              </div>
             );
           })
         }

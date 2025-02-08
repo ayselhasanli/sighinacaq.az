@@ -162,3 +162,9 @@ select {
     padding-bottom: 2rem;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  .contact .orange-background {
+    display: none;
+  }
+}
